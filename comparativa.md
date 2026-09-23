@@ -14,14 +14,14 @@ El software libre define derechos de uso y modificación, no su precio, mientras
 ## 3. Fichas técnicas
 
 ### ERP Libre: Odoo Community
-* **Licencia:** LGPLv3.
-* **Versión vigente:** Odoo 17 (o 18 según lanzamiento reciente).
-* **Lenguaje del servidor:** Python.
+* **Licencia:** LGPLv3
+* **Versión vigente:** Odoo 17 
+* **Lenguaje del servidor:** Python
 * **SGBD compatibles:** PostgreSQL.
-* **Modalidad:** Instalación local (On-Premise) / Hosting propio.
+* **Modalidad:** Instalación local / Hosting propio
 * **Módulos principales:** Ventas, CRM, Inventario, Facturación básica (la contabilidad avanzada es Enterprise).
 * **Requisitos:** Servidor Linux/Windows, Python 3.10+, PostgreSQL 12+.
-* **Fuente:** [Odoo Editions](https://www.odoo.com/) (Consultado: 23/09/2026).
+* **Fuente:** [Odoo Editions](https://www.odoo.com/) (Consultado: 23/09/2026)
 
 ### ERP Propietario: Microsoft Dynamics 365
 * **Licencia:** Propietaria (Suscripción SaaS).
@@ -55,16 +55,19 @@ El software libre define derechos de uso y modificación, no su precio, mientras
 
 ## 4. Fe de erratas del tema 2
 
-1. **Contabilidad en Odoo Community:**
-   * **Qué dice el tema:** "Odoo Community incluye un módulo de contabilidad completo".
-   * **Qué es correcto hoy:** La contabilidad completa y los informes dinámicos financieros pasaron a ser exclusivos de la versión Enterprise desde la versión 9. Community solo gestiona facturación y cobros/pagos.
-   * **Fuente:** Historial de versiones y comparativa oficial de Odoo.
-2. **Modalidad de Salesforce:**
-   * **Qué dice el tema:** "Salesforce puede instalarse en los servidores de la empresa (On-Premise)".
-   * **Qué es correcto hoy:** Salesforce nació y sigue siendo un software 100% Cloud (SaaS/PaaS). No existe instalación en servidores locales.
-   * **Fuente:** Documentación oficial de arquitectura de Salesforce.
+### - Versión actual de Odoo e incoherencia con los requisitos de Python
+* **Qué dice el tema:** En la página 7 (apartado 6, «ERP libre»), el texto indica que en Odoo *«su versión actual es la 14»* y añade a continuación que *«requiere la versión 3.10 o posterior de Python»* (escribiendo además «Phyton» de forma errónea).
+* **Qué es correcto hoy:** 
+  1. Odoo 14 es una versión desactualizada lanzada en 2020; las versiones vigentes y estables actuales son Odoo 17 y Odoo 18.
+  2. Existe una incoherencia técnica en el propio texto: Odoo 14 utilizaba entornos Python 3.6 a 3.8. El soporte y requisito obligatorio para Python 3.10 no llegó hasta el lanzamiento de Odoo 16 (a finales de 2022).
+* **Fuente:** Repositorio oficial de Odoo en GitHub (`https://github.com/odoo/odoo`) y notas oficiales de lanzamiento de versiones de Odoo.
 
-   ## 5. Matriz de decisión y recomendación
+### - Versión y arquitectura vigente de SuiteCRM
+* **Qué dice el tema:** En la página 8 (apartado 8, «CRM libre»), se afirma sobre SuiteCRM que *«Su código fuente y documentación están disponibles en GitHub con una versión (7.14.5) de código abierto bajo licencia AGPL-3.0»*.
+* **Qué es correcto hoy:** La rama SuiteCRM 7.x llegó a su fin de ciclo de soporte (End of Life). La versión principal y vigente es **SuiteCRM 8** (SuiteCRM 8.x), la cual introdujo una reescritura arquitectónica profunda adoptando Symfony para el backend y una interfaz basada en Angular.
+* **Fuente:** Documentación oficial y repositorio de SalesAgility (`https://docs.suitecrm.com/` y `https://github.com/salesagility/SuiteCRM-Core`).
+
+## 5. Matriz de decisión y recomendación
 
 * **Empresa 4 (Startup SaaS):** 12 empleados, técnicos en Python, presupuesto ajustado al principio pero con crecimiento rápido y facturación por suscripción.
 
