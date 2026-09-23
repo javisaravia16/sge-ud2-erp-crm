@@ -2,4 +2,4 @@
 
 * **Nombre:** [Javier Saravia Ogazon]
 * **Curso:** 2.º DAM
-* **N.º de Empresa asignada:** 4 (Startup SaaS)
+* **Numero de empresa asignada:** 4 (Startup SaaS)
