@@ -52,3 +52,14 @@ El software libre define derechos de uso y modificación, no su precio, mientras
 * **Módulos principales:** Sales Cloud, Service Cloud, Marketing Cloud.
 * **Requisitos:** Navegador web.
 * **Fuente:** [Salesforce Releases](https://help.salesforce.com/) (Consultado: 23/09/2026).
+
+## 4. Fe de erratas del tema 2
+
+1. **Contabilidad en Odoo Community:**
+   * **Qué dice el tema:** "Odoo Community incluye un módulo de contabilidad completo".
+   * **Qué es correcto hoy:** La contabilidad completa y los informes dinámicos financieros pasaron a ser exclusivos de la versión Enterprise desde la versión 9. Community solo gestiona facturación y cobros/pagos.
+   * **Fuente:** Historial de versiones y comparativa oficial de Odoo.
+2. **Modalidad de Salesforce:**
+   * **Qué dice el tema:** "Salesforce puede instalarse en los servidores de la empresa (On-Premise)".
+   * **Qué es correcto hoy:** Salesforce nació y sigue siendo un software 100% Cloud (SaaS/PaaS). No existe instalación en servidores locales.
+   * **Fuente:** Documentación oficial de arquitectura de Salesforce.
