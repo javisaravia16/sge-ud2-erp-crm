@@ -63,3 +63,21 @@ El software libre define derechos de uso y modificación, no su precio, mientras
    * **Qué dice el tema:** "Salesforce puede instalarse en los servidores de la empresa (On-Premise)".
    * **Qué es correcto hoy:** Salesforce nació y sigue siendo un software 100% Cloud (SaaS/PaaS). No existe instalación en servidores locales.
    * **Fuente:** Documentación oficial de arquitectura de Salesforce.
+
+   ## 5. Matriz de decisión y recomendación
+
+* **Empresa 4 (Startup SaaS):** 12 empleados, técnicos en Python, presupuesto ajustado al principio pero con crecimiento rápido y facturación por suscripción.
+
+**Justificación de puntuaciones:**
+* *Coste:* Odoo Community recibe un 5 por no tener coste de licencia, vital para los 12 empleados iniciales. Salesforce y Dynamics penalizan por su alto coste por usuario.
+* *Integración con Python:* Odoo está escrito en Python, lo que permite al equipo técnico de la Startup integrarlo o crear módulos nativamente (5). Salesforce (API REST buena) un 4.
+* *Suscripciones:* Salesforce gestiona esto impecablemente de forma nativa (5).
+* *Puntuación Ponderada Estimada:* Odoo (4.15), Salesforce (3.85), Dynamics 365 (3.25).
+
+**Recomendación final:** 
+Recomiendo **Odoo (versión Community o escalar a Enterprise si es necesario)**. Al ser un equipo de 12 personas que programan en Python, tendrán autonomía para alojar y mantener Odoo, adaptándolo a su facturación por suscripción usando código abierto. 
+
+**Riesgos:**
+* **Coste Total (TCO):** Aunque la licencia es gratis, el mantenimiento recae en el equipo técnico.
+* **Migración:** Si la startup crece exponencialmente, migrar los datos de Odoo Community a una solución superior puede ser complejo.
+* **Soporte:** No hay soporte oficial, dependerán de foros comunitarios.
